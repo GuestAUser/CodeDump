@@ -15,7 +15,7 @@ import pygame, random, math
 from pygame.math import Vector2
 
 pygame.init()
-WIDTH, HEIGHT = 1280, 720
+WIDTH, HEIGHT = 1440, 900 #Set value to 1280, 720 if the display is < 1920x1080
 SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Starry Fireworks Simulation (OPTIMIZED-RELEASE)")
 CLOCK = pygame.time.Clock()
