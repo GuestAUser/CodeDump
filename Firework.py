@@ -18,7 +18,7 @@ from pygame.math import Vector2
 pygame.init()
 
 async def main():
-    WIDTH, HEIGHT = 1440, 900
+    WIDTH, HEIGHT = 1600, 900
     SCREEN = pygame.display.set_mode(
         (WIDTH, HEIGHT),
         pygame.DOUBLEBUF | pygame.SCALED,
@@ -159,7 +159,7 @@ async def main():
                                 spark,
                                 1.2,
                                 random.uniform(1, 2),
-                                drag=0.95
+                                drag=0.92
                             )
                         )
             else:
@@ -331,7 +331,7 @@ async def main():
         buffer_surf.fill(BLACK)
         starfield.draw(buffer_surf)
         clouds.draw(buffer_surf)
-      
+
         for f in fireworks:
             f.draw(buffer_surf)
         buffer_surf = bloom_pass(buffer_surf)
