@@ -30,7 +30,7 @@ async def main():
     BLACK = (0, 0, 0)
 
     class Particle:
-        def __init__(self, pos, vel, color, radius, life, drag=0.95, gravity=0.1):
+        def __init__(self, pos, vel, color, radius, life, drag=0.96, gravity=0.1):
             self.pos = Vector2(pos)
             self.vel = Vector2(vel)
             self.color = color
@@ -339,7 +339,7 @@ async def main():
         SCREEN.blit(buffer_surf, (0, 0))
         ui.draw(SCREEN)
         pygame.display.flip()
+
         await asyncio.sleep(0)
-      
     pygame.quit()
 asyncio.run(main())
