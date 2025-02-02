@@ -27,7 +27,6 @@ pygame.init()
 
 
 def get_all_ui_elements(container) -> List[pygame_gui.core.UIElement]:
-    """Recursively get all UI elements from a container."""
     elements = []
     if hasattr(container, "get_children"):
         for child in container.get_children():
@@ -176,7 +175,7 @@ class Firework:
                         int(min(255, self.color[2] + random.randint(-30, 30))),
                     )
                     self.particles.append(
-                        Particle(self.rocket.pos, (vx, vy), spark, 1.2, random.uniform(1, 2), drag=0.92)
+                        Particle(self.rocket.pos, (vx, vy), spark, 2, random.uniform(1, 2), drag=0.92)
                     )
         else:
             for i in range(20):
