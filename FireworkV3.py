@@ -282,7 +282,7 @@ class Settings:
     def __init__(self):
         self.modes: List[str] = ["burst", "ring", "star", "trail"]
         self.effect_mode: str = self.modes[0]
-        self.color_mode: str = "random"  # or "custom"
+        self.color_mode: str = "random"
         self.custom_color: List[int] = [255, 0, 0]
 
 
