@@ -287,7 +287,7 @@ class FireworksSimulation:
     async def run(self):
         running = True
         while running:
-            dt = self.CLOCK.tick(60) / 1000.0
+            dt = self.CLOCK.tick(0) / 1000.0
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
